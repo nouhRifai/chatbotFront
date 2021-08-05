@@ -1,10 +1,13 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 // examples
+
 
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
 const QrManagementAdd = React.lazy(() => import('./views/components/qrManagement/add/Add'))
+const QrManagementList = React.lazy(() => import('./views/components/qrManagement/list/List'))
 
 const Accordion = React.lazy(() => import('./views/components/base/accordion/Accordion'))
 const Breadcrumbs = React.lazy(() => import('./views/components/base/breadcrumbs/Breadcrumbs'))
@@ -60,6 +63,7 @@ const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/qrManagement/Add', name: 'qrManagementAdd', component: QrManagementAdd },
+  { path: '/qrManagement/List', name: 'qrManagementList', component: QrManagementList },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },

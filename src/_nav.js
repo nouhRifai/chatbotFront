@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 import { NavLink } from 'react-router-dom'
@@ -32,12 +34,6 @@ const _nav = [
         as: NavLink,
         anchor: 'List',
         to: '/qrManagement/List',
-      },
-      {
-        _component: 'CNavItem',
-        as: NavLink,
-        anchor: 'Modify',
-        to: '/qrManagement/Modify',
       },
       {
         _component: 'CNavItem',
