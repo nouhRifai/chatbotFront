@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import { CCard, CCardBody, CCardHeader, CRow } from '@coreui/react'
 import { freeSet } from '@coreui/icons'

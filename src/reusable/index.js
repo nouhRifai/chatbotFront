@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 import DocsCallout from './DocsCallout'
 import DocsLink from './DocsLink'
 import Example from './Example'

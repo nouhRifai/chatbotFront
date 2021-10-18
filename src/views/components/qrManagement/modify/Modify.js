@@ -102,7 +102,10 @@ const Modify = () => {
 
   const saveQR = async () => {
       //call to the backend and specify "in order" the path, the methode and params or empty object "{}" 
-      const backendResponse = await axios("qr/update","GET",{intentName : intent.intentName, intentDisplayName: intent.intentDisplayName, question : questionList, response: responseList,});
+      console.log(intent.name);
+      console.log(intent.displayName);
+  
+      const backendResponse = await axios("qr/update","GET",{intentName : intent.name, intentDisplayName: intent.displayName, question : questionList, response: responseList,});
       console.log(backendResponse);
       setModalVisibility(false);
   };

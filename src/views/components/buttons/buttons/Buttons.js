@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 import React from 'react'
 import { CButton, CCard, CCardBody, CCardHeader, CCol, CRow } from '@coreui/react'
 import CIcon from '@coreui/icons-react'

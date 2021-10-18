@@ -44,11 +44,12 @@ const List = () => {
 
 
 
+
   const listIntents = async () => {
       //call to the backend and specify "in order" the path, the methode and params or empty object "{}" 
       const backendResponse = await axios("qr/list","GET",{});
       setIntetnsList(backendResponse.intents);
-      console.log(backendResponse);
+      // console.log(backendResponse);
   };
 
   useEffect(() => {
@@ -65,8 +66,9 @@ const List = () => {
     setModalVisibility(true);
     
   };
-  const deleteQRSubmit = (i) => {
-    alert("del");
+  const deleteQRSubmit = async (i) => {
+    const backendResponse = await axios("qr/delete","GET",i);
+    alert(backendResponse.message)
   };
 
 
@@ -92,7 +94,7 @@ const List = () => {
                   {intentsList.map((i,x) => {
                       return(
                       <CListGroupItem key={x} className="d-flex justify-content-between align-items-center" >
-                          <span style={{width:"95%"}} onClick={() => modifyQRSubmit(i)}>{i.intentDisplayName}</span>
+                          <span style={{width:"95%"}} onClick={() => modifyQRSubmit(i)}>{i.displayName}</span>
                           <CIcon style={{width:"5%"}} className="sidebar-brand-narrow" name="cil-trash" height={15} onClick={() => deleteQRSubmit(i)}/>   
                       </CListGroupItem>
                       )

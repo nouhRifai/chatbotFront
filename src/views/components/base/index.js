@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import Breadcrumbs from './Breadcrumbs'
 import Cards from './Cards'
 import Carousels from './Carousels'

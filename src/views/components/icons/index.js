@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import CoreUIIcons from './coreui-icons'
 import Flags from './flags'
 import Brands from './brands'

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import { CCard, CCardBody, CCardHeader, CCol, CFormCheck, CRow } from '@coreui/react'
 import { DocsCallout, Example } from 'src/reusable'

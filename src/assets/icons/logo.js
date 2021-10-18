@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export const logo = [
   '608 134',
   `
